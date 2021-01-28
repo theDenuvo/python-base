@@ -1,6 +1,7 @@
 def check(c):
     if c == 0:
-        print('error')
+        print('Error: Division by zero')
+        return
     else:
         return c
 
@@ -8,7 +9,10 @@ def check(c):
 def division(a, b):
     check(a)
     check(b)
-    print(a/b)
+    try:
+        print(a/b)
+    except ZeroDivisionError:
+        return
 
 
 num1 = int(input())
