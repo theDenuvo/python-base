@@ -6,7 +6,7 @@ def my_sum ():
 
         res = 0
         for el in range(len(number)):
-            if number[el] == '/' or number[el] == '/':
+            if number[el] == '/'
                 ex = True
                 break
             else:
